@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="tabTitle">Novazo</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/tabler-icons.min.css">
+</head>
+<body>
+    
+    <main class="main">
+        
+        <div class="playlist">
+            <div class="playing">
+                <img id="cover" src="" alt="">
+                <div class="info">
+                    <span id="trackNbr">0</span>
+                    <h2 id="title">Mbola tsy mandeha</h2>  
+                    <h4 id="artist">Tsy misy</h4>
+                    <i title="lisitra hira" id="listBtn" class="ti ti-list"></i>
+
+                </div>
+            </div>
+            
+            <ol class="list">
+                <i id="closeListBtn" class="ti ti-x"></i>
+                
+            </ol>
+            
+        </div>
+
+        <div class="player">
+            <div class="main-ctls">
+                <i title="aerigna" id="repeatBtn" class="ti ti-rotate"></i>
+                <i title="taloha" id="prevBtn" class="ti ti-player-skip-back"></i>
+                <i id="playBtn" class="ti ti-player-play"></i>
+                <i title="magnaraka" id="nextBtn" class="ti ti-player-skip-forward"></i>
+                <i title="sendrasendra" id="randomBtn" class="ti ti-arrows-cross"></i>
+            </div>
+
+            <div class="progress">
+                <span id="currTime">00:00</span>
+                <input type="range" id="progressTime">
+                <span id="totalTime">00:00</span>
+            </div>
+
+            <div class="volume-ctl">
+                <i id="volumeBtn" class="ti ti-volume"></i>
+                <input type="range" id="volumeBar" min="0" max="100" value="90">
+            </div>  
+        </div>
+
+    </main>
+    
+</body>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+</html>
